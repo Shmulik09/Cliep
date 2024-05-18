@@ -22,4 +22,5 @@ html
     width: 150px;
     height: 80px;
     transform: translate(650px, 10px);
+    border-radius: 15%;
 }
