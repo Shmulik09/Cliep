@@ -1,16 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Poetsen+One&display=swap');
+
+
 html
 {
     background-color: #9DDE8B;
 }
 
 
+  
 .TopPageBar
 {
-    background-color: #C3FF93;
-    opacity: 15%;
-    width: 1900px;
+    background-color: #c4ff9311;
+    opacity: 100%;
+    width: max;
     height: 100px;
     display: grid;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     grid-template-columns: repeat(4, 150px);
     grid-gap: 5px;
 }
@@ -21,6 +28,17 @@ html
     background-color: #ACE1AF;
     width: 150px;
     height: 80px;
-    transform: translate(650px, 10px);
     border-radius: 15%;
+    font-size: 35px;
+    text-align: center;
+    align-content: center;
+    font-family: "Poetsen One", sans-serif;
+}
+.VideoScreen
+{
+    display: flexbox;
+    justify-content: center;
+    width: 854px;
+    height: 480px;
+    background-color: black;
 }

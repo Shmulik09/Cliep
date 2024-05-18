@@ -2,7 +2,7 @@ var JSTopButtons = document.getElementsByClassName("TopButtons"); // Defiens Top
 
 for (var i = 0; i < JSTopButtons.length; i++) {
   JSTopButtons[i].addEventListener("mouseover", function () {
-    this.style.backgroundColor = "#99A98F";
+    this.style.backgroundColor = "#B0EBB4";
   });
 
   JSTopButtons[i].addEventListener("mouseout", function () {
