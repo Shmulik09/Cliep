@@ -1,4 +1,25 @@
+html
+{
+    background-color: #9DDE8B;
+}
+
+
 .TopPageBar
 {
-    background-color: blue;
+    background-color: #C3FF93;
+    opacity: 15%;
+    width: 1900px;
+    height: 100px;
+    display: grid;
+    grid-template-columns: repeat(4, 150px);
+    grid-gap: 5px;
+}
+
+
+.TopButtons
+{
+    background-color: #ACE1AF;
+    width: 150px;
+    height: 80px;
+    transform: translate(650px, 10px);
 }
