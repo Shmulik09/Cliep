@@ -1,44 +1,59 @@
-@import url('https://fonts.googleapis.com/css2?family=Poetsen+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
 
 
 html
 {
-    background-color: #9DDE8B;
+    background-color: #97BE5A;
 }
 
-
-  
-.TopPageBar
+.FullMap
 {
-    background-color: #c4ff9311;
-    opacity: 100%;
     width: max;
-    height: 100px;
+    height: 80vh;
     display: grid;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    grid-template-columns: repeat(4, 150px);
-    grid-gap: 5px;
+    grid-template-columns: repeat(5, 5fr);
+    grid-template-rows: repeat(10, 10fr);
+    background-color: red;
+    margin-top: 100px;
 }
 
-
-.TopButtons
+.BuildingSlotsHover:hover
 {
     background-color: #ACE1AF;
-    width: 150px;
-    height: 80px;
-    border-radius: 15%;
-    font-size: 35px;
-    text-align: center;
-    align-content: center;
-    font-family: "Poetsen One", sans-serif;
 }
-.VideoScreen
-{
-    display: flexbox;
+
+.BuildingSlots
+{   
+    display: flex;
     justify-content: center;
-    width: 854px;
-    height: 480px;
+    align-items: center;
+    font-family: "Rubik", sans-serif;
+}
+
+.Marked
+{
     background-color: black;
+    color: red;
+}
+
+
+.TitleBar
+{
+    position: absolute;
+    top: 10px;
+    left: 30px;
+    width: 400px;
+    height: 60px;
+    font-size: 50px;
+    font-family: "Rubik", sans-serif;
+}
+
+.BuildingsBar
+{
+    width: 500px;
+    height: 70px;
+    position: absolute;
+    top: 15px;
+    right: 50px;
+    background-color: blue;
 }
