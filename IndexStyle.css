@@ -49,6 +49,7 @@ html
     display: flex;
 }
 
+
 #BTitle
 {
     text-shadow: 1px 1px red;
@@ -62,6 +63,17 @@ html
 }
 
 
+.BuildingsBar
+{
+    width: 600px;
+    height: 70px;
+    position: absolute;
+    top: 15px;
+    right: 50px;
+    background-color: blue;
+}
+
+
 .InfoBar
 {
     width: 600px;
@@ -72,6 +84,7 @@ html
     left: 500px;
     display: flex;
     align-items: center;
+    justify-content: flex-start;
 }
 
 .PopulationNum
@@ -80,12 +93,9 @@ html
     font-family: "Rubik", sans-serif;
 }
 
-.BuildingsBar
+.MoneyNum
 {
-    width: 600px;
-    height: 70px;
-    position: absolute;
-    top: 15px;
-    right: 50px;
-    background-color: blue;
+    margin-left: 50px;
+    font-size: 20px;
+    font-family: "Rubik", sans-serif;
 }

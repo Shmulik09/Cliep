@@ -6,17 +6,18 @@ let JSPopulationNumber = parseInt(
   document.getElementById("PopulationNumber").innerHTML
 );
 
-eventTarget.addEventListener("keydown", (event) => {
+addEventListener("keydown", (event) => {
   if (event.isComposing || event.keyCode == 32) {
-    !IsPuased;
+    if (!IsPuased) {
+      document.getElementById("BodyId").style.background = color =
+        "rgba(218, 67, 30, 0.719)";
+      IsPuased = true;
+    } else {
+      document.getElementById("BodyId").style.backgroundColor = "#97BE5A";
+      IsPuased = false;
+    }
   }
 });
-
-if (IsPuased) {
-  document.body.style.background = color = "red";
-} else if (!IsPuased) {
-  document.body.style.backgroundColor = "#97BE5A";
-}
 
 // Creates 50 div elements and adds them to the FullMap container
 for (var i = 0; i < 50; i++) {
@@ -60,6 +61,9 @@ for (let j = 0; j < JSSlotsDivs.length; j++) {
   });
 }
 
+while (JSPopulationNumber > 0) {
+  MoneyFromTaxes = Math.floor(Math.random() * 1);
+}
 // End of the building slots code
 
 // Start of the top bars code
