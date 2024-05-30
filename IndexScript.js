@@ -5,6 +5,7 @@ let PopulationFromNewBuildings;
 let JSPopulationNumber = parseInt(
   document.getElementById("PopulationNumber").innerHTML
 );
+const JSBuildingsBar =  document.getElementsByClassName('BuildingsBar');
 
 addEventListener("keydown", (event) => {
   if (event.isComposing || event.keyCode == 32) {
@@ -51,6 +52,7 @@ for (let j = 0; j < JSSlotsDivs.length; j++) {
       // Mark the newly clicked div
       this.classList.add("Marked");
       this.classList.remove("BuildingSlotsHover");
+      
       if (!IsPuased) {
         PopulationFromNewBuildings = Math.floor(Math.random() * 10);
         JSPopulationNumber += PopulationFromNewBuildings;
@@ -67,6 +69,16 @@ while (JSPopulationNumber > 0) {
 // End of the building slots code
 
 // Start of the top bars code
+
+function BuildingsBarAnimations()
+{
+
+}
+
+
+
+
+
 
 // Left bar code
 // Will include animations and menu button
