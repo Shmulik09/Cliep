@@ -15,19 +15,21 @@ html
     grid-template-rows: repeat(10, 10fr);
     background-color: red;
     margin-top: 100px;
+    position: relative;
 }
 
-.BuildingSlotsHover:hover
+.CitySlotsHover:hover
 {
     background-color: #ACE1AF;
 }
 
-.BuildingSlots
+.CitySlots
 {   
     display: flex;
     justify-content: center;
     align-items: center;
     font-family: "Rubik", sans-serif;
+    overflow: hidden;
 }
 
 .Marked
@@ -50,12 +52,6 @@ html
 }
 
 
-#BTitle
-{
-    text-shadow: 1px 1px red;
-}
-
-
 .TitleBarText
 {
     margin-left: 5vh;
@@ -64,25 +60,16 @@ html
 }
 
 
-.BuildingsBar
-{
-    width: 85vh;
-    height: 70px;
-    position: absolute;
-    top: 15px;
-    right: 50px;
-    background-color: #6c8a3d38;
-    border-radius: 50% 20% / 10% 40%;;
-}
-
-
 .InfoBar
 {
-    width: 80vh;
+    width: 60vh;
+    border-right: 5px solid rgb(39, 26, 88);
     height: 70px;
     position: absolute;
+    background-color: rgb(39, 26, 88);
+    color: rgb(154, 151, 180);
     top: 15px;
-    left: 83vh;
+    left: 75vh;
     display: flex;
     align-items: center;
     justify-content: flex-start;
@@ -99,4 +86,74 @@ html
     margin-left: 50px;
     font-size: 20px;
     font-family: "Rubik", sans-serif;
+}
+
+
+
+
+
+
+
+
+.BuildingsBar
+{
+    width: 85vh;
+    height: 70px;
+    position: absolute;
+    top: 15px;
+    left: 140vh;
+    background-color: #6c8a3d;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+
+.BuildingsBarAnimation
+{
+    width: 84vh;
+    height: 70px;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.527);
+    border: 0px solid chartreuse;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.BuildingsBarAnomationInnerColor
+{
+    width: 85vh;
+    height: 70px;
+    background-color: #6c8a3d;
+}
+
+
+@keyframes BuildingsBarBorderExpansion {
+    25% {width: 85.5vh; height: 72px;}
+    50% {width: 86vh; height: 74px;}
+    100% {width: 86vh; height: 76px;}
+}
+
+
+.BuildingsTypes:hover ~ .BuildingsBarAnimation {
+    animation-name: BuildingsBarBorderExpansion;
+    animation-duration: 70ms;
+    animation-fill-mode: forwards;
+}
+
+
+.BuildingsBarAnimation:hover {
+    animation-name: BuildingsBarBorderExpansion;
+    animation-duration: 70ms;
+    animation-fill-mode: forwards;
+}
+
+
+.BuildingsTypes
+{
+    width: 15vh;
+    height: 10vh;
+    border: 1px solid black;
+    z-index: 1;
 }

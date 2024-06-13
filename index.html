@@ -3,21 +3,35 @@
 <head>
     <title>City Builder</title>
     <link rel="stylesheet" href="IndexStyle.css">
+    <style>
+        #BTitle
+        {
+            text-shadow: 1px 1px red;
+        }
+    </style>
 </head>
 <body>
+    <div class="TopBars">
     <div class="TitleBar">
         <div class="MenuButton">≡</div>
         <div class="TitleBarText">City <span id="BTitle">B</span>uilder 🏠</div>
     </div>
     <div class="InfoBar">
         <div class="PopulationNum">Poulation: <span id="PopulationNumber">0</span></div>
-        <div class="MoneyNum">Money: <span id="MoneyNumebr"></span></div>
+        <div class="MoneyNum">Money: <span id="MoneyNumber"></span></div>
     </div>
-    <div class="BuildingsBar"></div>
+    <div class="BuildingsBar">
+        <div class="BuildingsTypes" class="Building1"></div>
+        <div class="BuildingsTypes" class="Building2"></div>
+        <div class="BuildingsTypes" class="Building3"></div>
+        <div class="BuildingsTypes" class="Building4"></div>
+        <div class="BuildingsTypes" class="Building5"></div>
+        <div class="BuildingsBarAnimation"><div class="BuildingsBarAnomationInnerColor"></div></div>
+    </div>
+    </div>
     <div class="FullMap">
     </div>
-
-
+    
     <script src="IndexScript.js"></script>
 </body>
 </html>
